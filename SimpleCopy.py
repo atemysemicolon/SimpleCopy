@@ -27,4 +27,4 @@ if flag_argmode:
     pyperclip.copy(sys.argv[0])
 
 if flag_pipemode:
-    pyperclip.copy(sys.stdin.readline())
+    pyperclip.copy(sys.stdin.read())
