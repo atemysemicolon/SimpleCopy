@@ -2,7 +2,7 @@
 
 import sys
 import logging
-debug = True
+debug = False
 if debug:
     print(sys.executable)
     print(sys.argv)
@@ -24,7 +24,10 @@ else:
     flag_pipemode = True
 
 if flag_argmode:
-    pyperclip.copy(sys.argv[0])
+	print (sys.argv[0])
+	pyperclip.copy(sys.argv[0])
 
 if flag_pipemode:
-    pyperclip.copy(sys.stdin.read())
+	bla = sys.stdin.read()
+	print (bla)
+	pyperclip.copy(bla)
